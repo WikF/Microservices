@@ -5,7 +5,7 @@ import pika
 
 from products.models import Product
 
-params = pika.URLParameters('amqps://sdelsnmz:iFTN6WyUju8lZNKQzUEEbqy9_ML_0ZTt@stingray.rmq.cloudamqp.com/sdelsnmz')
+params = pika.URLParameters('secret')
 
 connection = pika.BlockingConnection(params)
 
