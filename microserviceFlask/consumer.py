@@ -10,7 +10,7 @@ connection = pika.BlockingConnection(params)
 
 channel = connection.channel()
 
-channel.queue_declare(queue='main')
+channel.queue_declare(queue='main_queue')
 
 def callback(ch, method, properties, body):
     print('Received in main')
